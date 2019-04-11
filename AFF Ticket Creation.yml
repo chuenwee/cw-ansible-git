@@ -1,0 +1,10 @@
+- name: Create Host Record
+  hosts: 172.16.133.45
+  connection: local
+  gather_facts: false
+
+  tasks:
+  - name: Create Host Record
+    include_role:
+      name: algosec.algosec
+      vars_from: "secrets.yml"
