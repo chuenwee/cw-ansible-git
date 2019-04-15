@@ -1,6 +1,6 @@
 ---
 - name: Create Host Record
-  hosts: "{{ algosec_manager }}"
+  hosts: "172.16.133.45"
   connection: local
   gather_facts: false
 
