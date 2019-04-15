@@ -1,6 +1,6 @@
 ---
 - name: Create Host Record
-  hosts: 172.16.133.45
+  hosts: "{ algosec_manager }}"
   connection: local
   gather_facts: false
 
@@ -8,4 +8,3 @@
   - name: Create Host Record
     include_role:
       name: algosec_provision_network_connectivity
-      vars_from: "secrets.yml"
