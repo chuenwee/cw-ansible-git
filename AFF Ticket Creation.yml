@@ -8,3 +8,4 @@
   - name: Create Host Record
     include_role:
       name: algosec_provision_network_connectivity
+      vars_from: "algosec-secrets.yml"
