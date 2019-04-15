@@ -1,2 +1,2 @@
 [algosec_manager]
-algosec_host1=172.16.133.45
+algosec algosec_host1=172.16.133.45
