@@ -1,5 +1,10 @@
 ---
 - name: Create Traffic Change Request if needed
+  hosts: [algosec_manager]
+  gather_facts: false
+
+  roles:
+    - role: algosec.algosec
 
   tasks:
   - name: Grab the credentials from ansible-vault
