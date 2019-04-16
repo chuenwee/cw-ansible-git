@@ -1,6 +1,6 @@
 ---
 - name: Invoke AlgoSec
-  hosts: all
+  hosts: "{{ algosec_manager }}"
   connection: local
   gather_facts: false
 
