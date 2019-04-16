@@ -1,6 +1,7 @@
 ---
 - name: Create Host Record
   hosts: "{{ alogosec_manager }}"
+  connection: local
   gather_facts: false
 
   tasks:
