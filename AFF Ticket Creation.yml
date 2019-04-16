@@ -1,6 +1,6 @@
 ---
 - name: Invoke AlgoSec
-  hosts: algosec_manager
+  hosts: all
   connection: local
   gather_facts: false
 
