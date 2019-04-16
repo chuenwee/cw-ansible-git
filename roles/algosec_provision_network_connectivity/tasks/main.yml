@@ -3,9 +3,6 @@
   hosts: [algosec_manager]
   gather_facts: False
 
-  roles:
-    - role: algosec.algosec
-
   tasks:
   - name: Grab the credentials from ansible-vault
     include_vars: 'algosec-secrets.yml'
