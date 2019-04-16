@@ -1,6 +1,7 @@
 ---
-- hosts: [algosec_manager]
-  gather_facts: false
+- name: Create Traffic Change Request if needed
+  hosts: algosec-server
+  gather_facts: False
 
   roles:
     - role: algosec.algosec
