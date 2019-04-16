@@ -1,11 +1,11 @@
 ---
-- name: Create Host Record
-  hosts: algosec_manager
+- name: Invoke AlgoSec
+  hosts: "{{ algosec_manager }}"
   connection: local
   gather_facts: false
 
   tasks:
-  - name: Create Host Record
+  - name: Create Ticket
     include_role:
       name: algosec_provision_network_connectivity
       vars_from: "algosec-secrets.yml"
