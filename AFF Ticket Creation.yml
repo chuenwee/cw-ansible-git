@@ -1,6 +1,6 @@
 ---
 - name: Create Host Record
-  hosts: "172.16.133.45"
+  hosts: "{{ alogosec_manager }}"
   connection: local
   gather_facts: false
 
