@@ -3,6 +3,7 @@
 # It should live in /etc/ansible/hosts
 [algosec_manager]
 172.16.133.45
+172.16.133.46
 #
 #   - Comments begin with the '#' character
 #   - Blank lines are ignored
