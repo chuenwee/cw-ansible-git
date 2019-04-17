@@ -1,16 +1,4 @@
 ---
-- name: Create Traffic Change Request if needed
-  hosts: [algosec_manager]
-  gather_facts: False
-
-  roles:
-    - role: algosec.algosec
-
-  tasks:
-  - name: Grab the credentials from ansible-vault
-    include_vars: 'algosec-secrets.yml'
-    no_log: 'yes'
-
   - name: Create Traffic Change Request
     # We use delegation to use the local python interpreter (and virtualenv if enabled)
     delegate_to: localhost
