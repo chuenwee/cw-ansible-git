@@ -1,9 +1,0 @@
----
- - name: Test
-   hosts: app_server
-   taks:
-   - command: touch/tmp/register_test.txt
-     register: repo_out
-   - debug:
-      msg: "{{ repo_out }}"
-
